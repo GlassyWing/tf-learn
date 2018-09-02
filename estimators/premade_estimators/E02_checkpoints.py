@@ -15,5 +15,3 @@ classifier = tf.estimator.DNNClassifier(
     model_dir='../data/models/iris')
 
 classifier.train(input_fn=lambda: iris_data.train_input_fn(train_x, train_y, batch_size), steps=200)
-
-
